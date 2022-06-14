@@ -48,7 +48,7 @@ app.listen(app.get("port"), function () {
 });
 
 const PAGE_ACCESS_TOKEN =
-  "EAADvAyOmQCcBAKrjrL4zI2C6tEwsuiEZAkuCGm9q4g7FBFPvr25BrT0cKSij70WWsHtZBmlc0pERt81VzbrrF2qesZCWVZAA0FgN9Mj9mZBqgi6XYzdFBNsKFa3FIEx9lWCE4vygzUYGPsNXmjopw3GgoDv5zSFr13itKsJqA68OZBCTEb2RgL";
+  "EAADvAyOmQCcBAH5VjNEecA1durg9OKwB6xZAhRdQnER3lcbzxf0rLKSKCmZAFbHi7tWzWj7C4USMXEq5xEZCmS4Qy3gTvnCQEa3pMhQIzWb0hOC8FMBtAGSHsvjz9bYbL7EdfnOTYj6nveZC2z5rZAtRReXNbC16X5ux3TaKqh6m7epRJYycDA3qacip0rhQgLusoSrxlswZDZD";
 
 const handleEvents = (events) => {
   const text = get(events, ["messaging", 0, "message", "text"]);
