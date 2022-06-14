@@ -71,7 +71,7 @@ const handleEvents = (events) => {
   };
   return request(config, (err, res, body) => {
     if (!body.error) {
-      console.log("message sent!", body);
+      console.log("message sent!!", body);
       return body;
     } else {
       return new Error("Unable to send message:" + body.error);
