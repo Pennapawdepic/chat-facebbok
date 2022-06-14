@@ -48,7 +48,7 @@ app.listen(app.get("port"), function () {
 });
 
 const PAGE_ACCESS_TOKEN =
-  "EAADvAyOmQCcBAE7XhFlGvcLgNhvbZC1X4WR7MMpPVZCFCbZBHuinhRZCdlxn9UDYXwwdtBQOXJrWzm1kOjNBaWDkPBcjRpCZCCbm2sl29hJs11ugr2xQtPaJ6B5IBVfR8ZAbLFW2YC12pNarkZA7D4Ro6RSa8QZCiNmVgC4K6YOzqSCDMv9b073spEtRYjZBouagBQ9UwyH0BgPeZAtpxZB2ZAVLOZCcAba0l46oaN1zNug7b80rDmEl3lZCN5";
+  "EAADvAyOmQCcBAAZC6yCzRRpNZC90t34hO8FrdiK5NOF2qxS7112rV8TjT1BMomxJquV0byIzrZBl6z74wKndBYwOSZAsznBwF95wEtMRnPxFHuFNTFYTg2ZCCEZCSf9LWVmxSTF7GZCsFSNky6xpJqXkHXzut7nqsF10o1lTZACnLhUoouqUHAl3gluXyH2Bj5SnL1qfNhhtvAZDZD";
 
 const handleEvents = (events) => {
   const text = get(events, ["messaging", 0, "message", "text"]);
@@ -71,7 +71,7 @@ const handleEvents = (events) => {
   };
   return request(config, (err, res, body) => {
     if (!body.error) {
-      console.log("message sent!!", body);
+      //console.log("message sent!!", body);
       return body;
     } else {
       return new Error("Unable to send message:" + body.error);
